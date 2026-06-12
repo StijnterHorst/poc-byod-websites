@@ -10,5 +10,18 @@
       "redirect": "/.auth/login/aad",
       "statusCode": 302
     }
+  },
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdConnectConfiguration": {
+            "wellKnownOpenIdConfigurationUrl": "https://login.microsoftonline.com/d64176c1-47d5-4fdb-867b-5f06b0b2e79b/v2.0/.well-known/openid-configuration"
+          },
+          "clientIdSettingName": "AZURE_CLIENT_ID",
+          "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+        }
+      }
+    }
   }
 }
